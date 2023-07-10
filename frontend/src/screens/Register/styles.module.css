@@ -1,0 +1,141 @@
+.signup_container {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("https://img.freepik.com/free-photo/finance-elements-frame_23-2148080960.jpg?w=740&t=st=1685378817~exp=1685379417~hmac=b9b0ed8b9875621324dd97fbcb22a4aabf34633d335e00307b3d791a817f4040");
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
+  
+  .signup_form_container {
+	width: 100%;
+	max-width: 900px;
+	height: 500px;
+	display: flex;
+	border-radius: 10px;
+	box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+	  0px 3px 4px 0px rgb(0 0 0 / 14%),
+	  0px 1px 8px 0px rgb(0 0 0 / 12%);
+  }
+  
+  .left {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #00A4EF;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+  }
+  
+  .left h1 {
+	margin-top: 0;
+	color: white;
+	font-size: 35px;
+	align-self: center;
+  }
+  
+  .right {
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+  }
+  
+  .form_container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  .form_container h1 {
+	font-size: 40px;
+	margin-top: 0;
+  }
+  
+  .input {
+	outline: none;
+	border: none;
+	width: 100%;
+	max-width: 370px;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: #edf5f3;
+	margin: 5px 0;
+	font-size: 14px;
+  }
+  
+  .error_msg {
+	width: 100%;
+	max-width: 370px;
+	padding: 15px;
+	margin: 5px 0;
+	font-size: 14px;
+	background-color: #f34646;
+	color: white;
+	border-radius: 5px;
+	text-align: center;
+  }
+  
+  .white_btn,
+  .green_btn {
+	border: none;
+	outline: none;
+	padding: 12px 0;
+	background-color: white;
+	border-radius: 20px;
+	width: 180px;
+	font-weight: bold;
+	font-size: 14px;
+	cursor: pointer;
+  }
+  
+  .green_btn {
+	background-color: #6C757D;
+	color: white;
+	margin: 10px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+	.signup_form_container {
+	  flex-direction: column;
+	  height: auto;
+	}
+  
+	.left {
+	  border-radius: 10px 10px 0 0;
+	  border-bottom-left-radius: 0;
+	}
+  
+	.right {
+	  border-radius: 0 0 10px 10px;
+	  border-top-right-radius: 0;
+	}
+  }
+  
+  @media only screen and (max-width: 480px) {
+	.input,
+	.error_msg {
+	  width: 100%;
+	  max-width: 100%;
+	}
+  
+	
+	.green_btn {
+	  width: 100%;
+	  max-width: 100%;
+	}
+	.white_btn{
+		width: 160%;
+		max-width: 160%;
+		
+	}
+  }
+  
